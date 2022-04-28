@@ -2,11 +2,12 @@
   "name": "api",
   "author": "Zaland Khan",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "dist/server.js",
+  "license": "ISC",
   "scripts": {
-    "dev": "nodemon dist/app.js",
+    "dev": "nodemon dist/server.js",
     "build": "tsc",
-    "start": "ts-node ./src/app.ts"
+    "start": "ts-node ./src/server.ts"
   },
   "dependencies": {
     "axios": "0.27.2",
