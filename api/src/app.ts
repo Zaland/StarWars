@@ -17,7 +17,7 @@ app.use((_req, res, next) => {
   next();
 });
 
-// setup route to person
+// setup route to character
 app.use("/character", CharacterRouter);
 
 export default app;
