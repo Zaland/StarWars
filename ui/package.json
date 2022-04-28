@@ -1,6 +1,7 @@
 {
   "name": "ui",
   "version": "0.1.0",
+  "author": "Zaland Khan",
   "private": true,
   "dependencies": {
     "@types/node": "^16.11.31",
