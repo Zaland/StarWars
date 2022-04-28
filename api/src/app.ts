@@ -10,7 +10,4 @@ initMiddleware(app);
 // setup endpoints
 initRoutes(app);
 
-// start the Express server
-app.listen(3000, () => {
-  console.log(`server started at http://localhost:3000`);
-});
+export default app;
