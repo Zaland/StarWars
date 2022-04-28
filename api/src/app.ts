@@ -1,6 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
-import PersonRouter from "./routes/Person.route";
+import CharacterRouter from "./routes/Character.route";
 
 const app = express();
 
@@ -17,10 +17,7 @@ app.use((_req, res, next) => {
   next();
 });
 
-// test route
-// app.use("/", (_req, res) => res.send("hit the endpoint!"));
-
 // setup route to person
-app.use("/person", PersonRouter);
+app.use("/character", CharacterRouter);
 
 export default app;

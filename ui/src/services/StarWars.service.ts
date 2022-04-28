@@ -7,8 +7,8 @@ class StarWars {
     this.apiClient = api;
   }
 
-  getPerson = (id: number) =>
-    this.apiClient.get(`http://localhost:3000/person/${id}`);
+  getCharacter = (id: number) =>
+    this.apiClient.get(`http://localhost:3000/character/${id}`);
 }
 
 export const StarWarService = new StarWars(axios);
