@@ -7,12 +7,16 @@ import { Container } from "./styles";
 
 export const Page = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const [characterData, setCharacterData] = useState({});
 
   const handleClick = async (id: number) => {
     setIsLoading(true);
-    console.log({ id });
+
+    const response = await StarWarService.getCharacter(id);
+
+    setCharacterData(response.data);
+    setIsLoading(false);
   };
-  // const test = await StarWarService.getPerson(1);
 
   return (
     <>
@@ -22,7 +26,9 @@ export const Page = () => {
 
       <Container>
         <Typography sx={{ paddingBottom: 2 }}>
-          Select a character to load their data...
+          {Object.keys(characterData).length
+            ? JSON.stringify(characterData, null, "\t")
+            : "Select a character to load their data..."}
         </Typography>
         <Grid container spacing={2}>
           {Characters.map((character) => (
