@@ -1,4 +1,4 @@
-export const People = [
+export const Characters = [
   {
     fields: {
       edited: "2014-12-20T21:17:56.891Z",
