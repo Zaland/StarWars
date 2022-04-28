@@ -10,15 +10,11 @@ export const get = async (req: Request, res: Response, next: NextFunction) => {
       .get(`https://swapi.dev/api/people/${id}`)
       .then((response) => response.data);
 
-    console.log({ personData });
-
     let homeworldData: Homeworld = {};
     if (personData.homeworld) {
       const { name, terrain, population } = await axios
         .get(personData.homeworld)
         .then((response) => response.data);
-
-      console.log({ homeworldData });
 
       homeworldData.title = name;
       homeworldData.terrain = terrain;
