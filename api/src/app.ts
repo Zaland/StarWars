@@ -18,7 +18,7 @@ app.use((_req, res, next) => {
 });
 
 // test route
-app.use("/", (_req, res) => res.send("hit the endpoint!"));
+// app.use("/", (_req, res) => res.send("hit the endpoint!"));
 
 // setup route to person
 app.use("/person", PersonRouter);
