@@ -1,9 +1,9 @@
 import { CardContent, Typography } from "@mui/material";
-import { Character } from "../../types";
+import { CharacterData } from "../../../../types";
 import { Card as CardContainer } from "./styles";
 
 interface CardProps {
-  character: Character;
+  character: CharacterData;
   onClick: (arg: number) => void;
 }
 

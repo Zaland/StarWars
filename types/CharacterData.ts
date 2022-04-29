@@ -1,4 +1,4 @@
-export interface Character {
+export interface CharacterData {
   pk: number;
   fields: {
     edited: string;
