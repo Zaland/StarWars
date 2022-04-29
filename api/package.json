@@ -1,7 +1,7 @@
 {
   "name": "api",
-  "author": "Zaland Khan",
   "version": "1.0.0",
+  "author": "Zaland Khan",
   "main": "dist/server.js",
   "license": "ISC",
   "scripts": {
