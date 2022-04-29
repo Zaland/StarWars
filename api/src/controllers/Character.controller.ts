@@ -1,6 +1,6 @@
 import axios, { AxiosInstance } from "axios";
 import { Request, Response, NextFunction } from "express";
-import { Films, Homeworld, Species } from "../types";
+import { Films, Homeworld, Species } from "../../../types";
 
 export class Character {
   private Axios: AxiosInstance;
