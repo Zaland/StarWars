@@ -23,10 +23,9 @@ export const Page = () => {
       setCharacterData(response.data);
       setIsLoading(false);
     } catch (error) {
-      console.log({ error });
       setModal(false);
       setIsLoading(false);
-      alert("Something went wrong!");
+      alert("Something went wrong! Please try again.");
     }
   };
 
